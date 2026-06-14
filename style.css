@@ -14,7 +14,16 @@
 html,
 body {
     margin: 0;
-    padding: 0;
+    padding: 0px;
+    padding-bottom:10px;
+    background-image:url("Chud.png");
+    background-size:contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: white;
+  height: 560px;
+ 
 }
 
 /* Style the body with a background color or image if desired */
@@ -29,11 +38,16 @@ body {
 .title {
     font-size: 24px;
     font-weight: bold;
+    color:lightgreen;
     margin-bottom: 20px;
 }
 
 /* Style the story opening container */
 .story-opening {
+    position: relative;
+    left:950px;
+    width: 200px;
+    height:125px;
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
@@ -56,7 +70,13 @@ body {
 
 /* Style the buttons container */
 .buttons {
-    margin: 20px;
+    display:none;
+    position:relative;
+    top:120px;
+    left: 921px;
+    margin: 0px;
+    width: 296px;
+    height: 50px;
 }
 
 /* Style the option buttons */
@@ -81,12 +101,17 @@ button:hover {
 .option-two-screen,
 .option-one-end,
 .option-two-end {
+position: relative;
+bottom:100px;
+    left:900px;
+    width: 300px;
+    height:135px;
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
+    display:none;
 }
 
 /* Style the images in the screens */
@@ -94,8 +119,10 @@ button:hover {
 .option-two-screen img,
 .option-one-end img,
 .option-two-end img {
+   
     max-width: 100%;
-    height: auto;
+    width:100px;
+    height: 100px;
     margin-bottom: 10px;
 }
 
@@ -104,6 +131,8 @@ button:hover {
 .option-two-screen h1,
 .option-one-end h1,
 .option-two-end h1 {
+   position:relative;
+   bottom:13px;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin: 0px;
 }
