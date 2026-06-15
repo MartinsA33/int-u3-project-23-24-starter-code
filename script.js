@@ -6,6 +6,10 @@ let opening=document.querySelector("#opening");
 let clickA=document.querySelector("#clickA");
 let Option1=document.querySelector(".option-one-screen");
 let Option2=document.querySelector(".option-two-screen");
+let end1=document.querySelector(".option-one-end");
+let end2=document.querySelector(".option-two-end");
+let EndText=document.querySelector("#EndText");
+let EndText2=document.querySelector("#EndText2");
 let context=document.querySelector("#context");
 let img1=document.querySelector("#img1");
 let img2=document.querySelector("#img2");
@@ -15,9 +19,14 @@ let opt2=document.querySelector(".option-two");
 let textLine=0;
 let option1B=0;
 let option2B=0;
+let chad=0;
 
 
-
+/*while(true){
+    if(chad==4){
+        body.style.backgroundImage="url('https://static.wikia.nocookie.net/youtube/images/1/12/ChadChad2.jpg/revision/latest/thumbnail/width/360/height/360?cb=20250703002258')"
+    }
+}*/
 
 
 
@@ -39,49 +48,157 @@ buttons.style.display="block";
 });
 
 opt1.addEventListener("click", function(){
-  //  alert("hello");
+ alert("Chad Counter:"+chad);
   option1B++;
   option2B++;
+   if(chad==4){
+          Option2.style.display="none";
+    buttons.style.display="none";
+    end2.style.display="block";
+    end2.style.top="0px";
+    EndText2.innerHTML="You are a CHAD."; 
+    body.style.backgroundImage="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ020ZIn9G6PTQ10Je5y_GdflzBZqvBnajMheefHq6vOzHnFRNjtqielA&s=10')"
+location.reload();  
+}
   if(option1B==1){
    body.style.backgroundImage="url('wojak.png')";
    Option1.style.display="none";
    Option2.style.display="block";
+   ++chad;
    context.innerHTML="9 AM What for breakfast?";
    img1.src="https://www.luckycharms.com/_next/image?url=https%3A%2F%2Fmojo.generalmills.com%2Fapi%2Fpublic%2Fcontent%2Fg6ys8a9QRJu52gFRwfz_sQ_04c57eea-66a2-45cd-a3f2-ecd27146a451_04c57eea-66a2-45cd-a3f2-ecd27146a451.png%3Fv%3Da7636684%26t%3D04c57eea66a245cda3f2ecd27146a451&w=1400&q=75"
     img2.src="https://hannahmageerd.com/wp-content/uploads/2020/04/IMG_2858-683x1024.jpg"
   }else if(option2B==2){
-   context.innerHTML="11 AM What next?";
+   context.innerHTML="11 AM What do you do?";
    body.style.backgroundImage="url('Chud.png')";
    img1.src="https://assets.clevelandclinic.org/transform/26568096-7fcc-4713-898d-ca1ed6c84895/exerciseHowOften-944015592-770x533-1_jpg";
    img2.src="https://www.thensf.org/wp-content/uploads/2021/05/woman-napping-400x400-1.jpg"
   } else if(option1B==3){
-     context.innerHTML="11 AM What next?";
+    ++chad;
+     context.innerHTML="11 AM What do you do?";
    img1.src="https://cdn.prod.website-files.com/672d8472c9614f13fcb47654/68af28386e2cf4606fbaa691_types%20of%20showers.png";
-    img2.src="https://upload.wikimedia.org/wikipedia/commons/6/67/Scrolling_on_phone.jpg"
+    img2.src="https://upload.wikimedia.org/wikipedia/commons/6/67/Scrolling_on_phone.jpg";
+    if(chad==4){
+           Option2.style.display="none";
+    buttons.style.display="none";
+    end2.style.display="block";
+    end2.style.top="0px";
+    EndText2.innerHTML="You are a CHAD.";
+   
+        body.style.backgroundImage="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ020ZIn9G6PTQ10Je5y_GdflzBZqvBnajMheefHq6vOzHnFRNjtqielA&s=10')"
+location.reload();
+    }
 } else if(option1B==4){
+    ++chad;
     context.innerHTML="11:07 AM Break time";
+    if(chad==4){
+        Option2.style.display="none";
+    buttons.style.display="none";
+    end2.style.display="block";
+    end2.style.top="0px";
+    EndText2.innerHTML="You are a CHAD.";
+  
+        body.style.backgroundImage="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ020ZIn9G6PTQ10Je5y_GdflzBZqvBnajMheefHq6vOzHnFRNjtqielA&s=10')"
+   location.reload();
+    }
    img1.src="https://img.magnific.com/free-vector/boy-with-curly-hair-reading-book_1308-139994.jpg?semt=ais_hybrid&w=740&q=80";
     img2.src="https://sm.ign.com/ign_pk/lists/t/the-top-25/the-top-25-greatest-anime-characters-of-all-time_4npu.jpg"; 
+}else if (option1B==6){
+     context.innerHTML="4 PM What do you do?";
+     ++chad;
+     img1.src="https://www.thensf.org/wp-content/uploads/2021/05/woman-napping-400x400-1.jpg";
+     img2.src="https://oxfordlearning.com/wp-content/uploads/2025/03/AdobeStock_132869690-scaled.jpeg";
+}else if(option1B==7){
+    Option2.style.display="none";
+    buttons.style.display="none";
+    end1.style.display="block";
+    end1.style.top="0px";
+    EndText.innerHTML="You are a CHUD.";
+    body.style.backgroundImage="url('Chud.png')";
 }
   
 });
 
 opt2.addEventListener("click", function(){
-   // alert("hello");
+   alert("Chad Counter:"+chad);
 option2B++;
 option1B++;
-if(option2B==1){
+ if(chad==4){
+     Option2.style.display="none";
+    buttons.style.display="none";
+    end2.style.display="block";
+    end2.style.top="0px";
+    EndText2.innerHTML="You are a CHAD.";
+
+        body.style.backgroundImage="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ020ZIn9G6PTQ10Je5y_GdflzBZqvBnajMheefHq6vOzHnFRNjtqielA&s=10')";
+ location.reload();
+    }
+ if(option2B==1){
+    ++chad;
+    if(chad==4){
+         Option2.style.display="none";
+    buttons.style.display="none";
+    end2.style.display="block";
+    end2.style.top="0px";
+    EndText2.innerHTML="You are a CHAD.";
+    
+        body.style.backgroundImage="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ020ZIn9G6PTQ10Je5y_GdflzBZqvBnajMheefHq6vOzHnFRNjtqielA&s=10')"
+  location.reload();
+    }
  Option1.style.display="none";
     Option2.style.display="block";
 }else if(option2B==2){
-       context.innerHTML="10 AM What next?";
+    ++chad;
+    if(chad==4){
+         Option2.style.display="none";
+    buttons.style.display="none";
+    end2.style.display="block";
+    end2.style.top="0px";
+    EndText2.innerHTML="You are a CHAD.";
+        body.style.backgroundImage="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ020ZIn9G6PTQ10Je5y_GdflzBZqvBnajMheefHq6vOzHnFRNjtqielA&s=10')"
+   location.reload();
+    }
+       context.innerHTML="10 AM What do you do?";
    img1.src="https://assets.clevelandclinic.org/transform/26568096-7fcc-4713-898d-ca1ed6c84895/exerciseHowOften-944015592-770x533-1_jpg";
     img2.src="https://upload.wikimedia.org/wikipedia/commons/6/67/Scrolling_on_phone.jpg";
 }else if(option2B==3){
-     context.innerHTML="3 PM What next?";
+     context.innerHTML="3 PM What do you do?";
      body.style.backgroundImage="url('Chud.png')";
    img2.src="https://cdn.prod.website-files.com/672d8472c9614f13fcb47654/68af28386e2cf4606fbaa691_types%20of%20showers.png";
     img1.src="https://upload.wikimedia.org/wikipedia/commons/6/67/Scrolling_on_phone.jpg";
+}else if(option2B==4){
+    ++chad;
+    if(chad==4){
+         Option2.style.display="none";
+    buttons.style.display="none";
+    end2.style.display="block";
+    end2.style.top="0px";
+    EndText2.innerHTML="You are a CHAD.";
+   
+        body.style.backgroundImage="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ020ZIn9G6PTQ10Je5y_GdflzBZqvBnajMheefHq6vOzHnFRNjtqielA&s=10')"
+    location.reload();
+    }
+    context.innerHTML="3:07 PM What do you do?";
+      body.style.backgroundImage="url('wojak.png')";
+    img1.src="https://img.magnific.com/free-vector/boy-with-curly-hair-reading-book_1308-139994.jpg?semt=ais_hybrid&w=740&q=80";
+    img2.src="https://sm.ign.com/ign_pk/lists/t/the-top-25/the-top-25-greatest-anime-characters-of-all-time_4npu.jpg"; 
+}else if(option2B==5){
+     context.innerHTML="3 PM What for lunch?";
+     body.style.backgroundImage="url('Chud.png')";
+   img2.src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Big_Mac.png";
+    img1.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0qCtaPNtJAkCBf2Z-ZN3nAzZoAL6XarwJsA&s";
+}else if(option2B==6){
+    ++chad
+     context.innerHTML="4 PM What next?";
+    img1.src="https://hips.hearstapps.com/hmg-prod/images/man-walking-through-park-min-67a9f9d8a52b9.jpg?crop=0.756xw:1.00xh;0.0808xw,0&resize=1200:*";
+    img2.src="https://www.thensf.org/wp-content/uploads/2021/05/woman-napping-400x400-1.jpg";
+} else if (option2B==7){
+       Option2.style.display="none";
+    buttons.style.display="none";
+    end1.style.display="block";
+    end1.style.top="0px";
+    EndText.innerHTML="You are a CHUD.";
+    body.style.backgroundImage="url('Chud.png')";
 }
 });
 // When you're ready to make event handlers, uncomment the code below. 
